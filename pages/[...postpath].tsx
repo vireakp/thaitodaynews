@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://seameoted.org/newsfeed/graphql` + encodeURI(path as string)
+					`https://seameoted.org/newsfeed/` + encodeURI(path as string)
 				}`,
 			},
 		};
